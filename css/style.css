@@ -1,0 +1,95 @@
+:root {
+  --box-border-radius: 30px;
+
+  /* Primary */
+  --primary-light-red: hsl(0, 100%, 67%);
+  --primary-yellow: hsl(39, 100%, 56%);
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+
+  --gradient-light-slate-blue-background: hsl(252, 100%, 67%);
+  --gradient-light-royal-blue-background: hsl(241, 81%, 54%);
+  --gradient-violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --gradient-persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-pale-blue: hsl(221, 100%, 96%);
+  --neutral-light-lavender: hsl(241, 100%, 89%);
+  --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-family: Hanken Grotesk;
+  font-weight: 500, 700, 800;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk, sans-serif;
+}
+#container {
+  width: 610px;
+  height: 430px;
+  border-radius: var(--box-border-radius);
+  box-shadow: 20px 20px 20px var(--neutral-pale-blue);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/* Font */
+#container > .box > .number-large {
+  font-weight: 800;
+}
+#container > .box > h2,
+h3,
+p,
+.number-small {
+  font-weight: 500;
+}
+/* Left */
+#container > .box {
+  text-align: center;
+  border-radius: var(--box-border-radius);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 10px 50px;
+}
+#container > .box > h3,
+p,
+.number-small {
+  color: var(--neutral-light-lavender);
+}
+#container > .box > h2,
+.number-large {
+  color: var(--neutral-white);
+}
+
+#container > .box > .score {
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+  display: grid;
+  align-content: center;
+}
+#container > .box > .score > .number-large {
+  font-size: 50px;
+  color: var(--neutral-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
