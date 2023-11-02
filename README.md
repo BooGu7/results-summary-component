@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BooGu7/results-summary-component)
-- Live Site URL: [Add live site URL here](https://boogu7.github.io/results-summary-component/)
+- Solution URL: [URL here](https://github.com/BooGu7/results-summary-component)
+- Live Site URL: [Live site URL here](https://boogu7.github.io/results-summary-component/)
 
 ## My process
 
