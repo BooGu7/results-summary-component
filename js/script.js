@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskDiv = document.createElement("div");
         taskDiv.className = `task task${index + 1}`;
         taskDiv.innerHTML = `
-      <img class="icon type${index + 1}" src="${item.icon}" />
+      <img class="icon type${index + 1}" src="${item.icon}" alt="type${index + 1}"/>
       <div class="content type${index + 1}">${item.category}</div>
       <div class="number-1">${item.score}</div>
       <div class="number-2">/ 100</div>
